@@ -1,0 +1,466 @@
+/* Base HTML Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+	--orange: #df6e05;
+	--lightorange: #ffb833;
+	--white: #57d68d;
+	--blue: #5dade2;
+	--black: #111111;
+	--gray: #e3e3e3;
+}
+
+/* CSS Reset */
+
+html {
+	box-sizing: border-box;
+	font-size: 10px;
+	font-family: 'Inter', sans-serif;
+	color: var(--gray);
+	scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Rubik', sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Global styles */
+
+body {
+    background-color: var(--black);
+}
+
+
+/* HEADER */
+
+
+
+
+.profile-photo {
+    display: block;
+    height: 112px;
+    outline: solid;
+    outline-color: var(--orange);
+    margin-left: 16px;
+    margin-top: 40px;
+    
+}
+
+
+.topend {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--orange);
+    border-style: solid;
+    border-top: none;
+    border-right:none;
+    border-left: none;
+    
+}
+
+.mobile-header {
+    justify-self: flex-end;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 16px;
+}
+
+
+.hamburger-button{
+    background-color: var(--black);
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+}
+
+.project-button{
+    background-color: var(--orange);
+    position: ;
+    border-style: none;
+    cursor: pointer;
+    
+}
+/* 
+.project-button::before {
+    content: url(/imgs/project_button.svg);
+    
+    
+    
+} */
+
+
+.hero {
+    align-self: flex-start;
+}
+
+
+h1 {
+    
+    outline:solid;
+    font-size: 3rem;
+    margin: 16px;
+ }
+
+ h2 {
+    
+    outline: solid;
+    font-size: 1.5rem;
+    margin: 16px;
+ }
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    height: 24px;
+    width: 112px;
+    margin-left: 16px;
+    outline: solid;
+    
+}
+
+.mainchunk {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;    
+    border-bottom: solid 3px var(--orange);
+    border-right: none;
+    border-left: none;
+    border-top:solid 3px var(--orange); */
+}
+
+.chunks {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 0%, 15%);
+    padding: 4px;
+    
+}
+
+
+h3 {
+    
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding: 16px;
+    font-family: 'Inter';
+    text-transform: uppercase;
+
+}
+
+
+
+/* h3.background::before{
+    border-left: 2px solid rgb(199, 30, 30);
+    content: "";
+    display: block;
+    height: 24px;
+    left: -8px;
+    position: absolute;
+    top: -30px;
+    width: 1px;
+    z-index: 0;
+}
+h3.background::after {
+    border-left: 2px solid rgb(196, 34, 34);
+    content: "";
+    display: block;
+    height: 24px;
+    left: 8px;
+    position: absolute;
+    top: 76px;
+    width: 1px;
+    z-index: 0;
+} */
+
+p {
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+}
+
+#about {
+
+}
+
+#projects {
+    background-color: var(--orange);
+}
+
+.project-links {
+    padding: 8px;
+}
+
+#contact {
+
+}
+
+
+
+/* label, input, textarea, select {
+	display: block;
+	width: 100%;
+} */
+
+/* input, select, textarea {
+	padding: 8px;
+} */
+
+/* Components */
+
+/* .btn-primary, .btn-secondary {
+	padding: 12px 16px;
+	display: inline-block;
+	text-decoration: none;
+	color: var(--black);
+	border-radius: 4px;
+} */
+
+/* .btn-primary {
+	background-color: white;
+	transition: all 0.3s ease;
+} */
+
+/* .btn-primary:hover { */
+	/* outline: 1px solid var(--black); */
+	/* box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2); */
+	/* transform: scale(1.1); */
+	/* transform: translateY(-4px); */
+	/* background-color: rgba(255, 255, 255, 0.7); */
+/* } */
+
+/* .btn-secondary {
+	background-color: rgba(255, 255, 255, 0.6);
+	border: 1px solid white;
+	transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+	background-color: rgba(255, 255, 255, 1);
+} */
+
+/* Header */
+
+/* .desktop-nav {
+	display: none;
+} */
+
+/* @media (min-width: 768px){
+	.desktop-nav {
+		display: block;
+	}
+	.mobile-nav {
+		display: none;
+	}
+} */
+
+/* .mobile-nav a {
+	text-decoration: none;
+	color: var(--black);
+	display: block;
+	padding: 4px 16px;
+} */
+/* 
+header button {
+	all: unset;
+}
+
+@media (min-width: 768px){
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header a {
+		text-decoration: none;
+		color:  var(--black);
+	}
+
+	nav {
+		display: inline-block;
+	}
+
+	header nav ul {
+		display: flex;
+		gap: 24px;
+		margin-right: 16px
+	}
+
+	.hamburger-icon {
+		display: none;
+	}
+} */
+
+/* .logo, .hamburger-icon {
+	height: 50px;
+}
+
+.mobile-header {
+	padding: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+} */
+
+/* Hero */
+
+/* #hero {
+	background-color: var(--pink);
+	padding: 56px 16px;
+}
+
+#hero h1 {
+	font-size: 2rem;
+	margin-bottom: 24px;
+}
+
+@media (min-width: 768px){
+	#hero {
+		padding: 120px 56px;
+	}
+
+	#hero h1 {
+		font-size: 3.5rem;
+		max-width: 70%;
+	}
+}
+
+
+#hero .hero-accent {
+	color: white;
+} */
+
+/* Workshops Article */
+
+
+/* #courses article {
+	padding: 32px 16px;
+}
+
+@media (min-width: 768px){
+	#courses {
+		display: flex;
+	}
+
+	#courses article {
+		padding: 56px;
+	}
+}
+
+#courses article .icon {
+	height: 24px;
+}
+
+#courses article h2 {
+	margin-bottom: 16px;
+	color: white;
+}
+
+#courses article p {
+	margin-bottom: 16px;
+}
+
+#courses .workshops {
+	background-color: var(--yellow);
+	transition: all 0.3s ease;
+}
+
+#courses .workshops:hover {
+	filter: contrast(150%);
+}
+
+#courses .flash {
+	background-color: var(--green);
+}
+
+#courses .plus {
+	background-color: var(--blue);
+} */
+
+/* Contact section */
+
+/* #contact {
+	padding: 48px 16px;
+}
+
+#contact input, #contact select {
+	margin-bottom: 16px;
+}
+
+#contact h2 {
+	margin-bottom: 16px;
+}
+
+@media (min-width: 768px){
+	#contact h2 {
+		text-align: center;
+		font-size: 2.5rem;
+	}
+
+	#contact form {
+		max-width: 60%;
+		margin: 40px auto;
+	}
+}
+
+#contact input[type="submit"] {
+	background-color: var(--pink);
+	border: 0;
+	margin-top: 8px;
+	cursor: pointer;
+} */
+
+/* Footer */
+
+/* footer {
+	padding: 16px;
+	text-align: center;
+} */
+
+/* Utilities */
+
+/* .display-none {
+	display: none;
+} */
