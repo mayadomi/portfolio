@@ -10,7 +10,7 @@
 <body>
     <header>
 
-        <nav class="topend">
+        <nav class="header-content">
 
             <section class="hero">
                 <h1>Maya Dominice</h1>
@@ -21,10 +21,11 @@
                     <img src="imgs/twitter.png" alt="Twitter Logo">
                     <img src="imgs/github.png" alt="GitHub Logo">
                 </section>
-    
-                <img src="imgs/profile.jpg" alt="Headshot Image" class="profile-photo">
+                <div id="profile">
+                    <img src="imgs/profile.jpg" alt="Headshot Image" class="profile-photo">
+                </div>
             </section>
-
+   
             <div class="mobile-header">
                 <button class="hamburger-button">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0,0,256,256">
@@ -51,7 +52,7 @@
                         </g>
                     </svg>
                 </button>
-                <nav class="mobile-nav">
+                <nav class="mobile-nav display-none" >
                     <ul>
                         <li>
                             <a href="">About Me</a>
@@ -68,51 +69,48 @@
 
         </nav>
     </header>
-    <section class="mainchunk">
-        <div class="chunks" id="about"> 
+    <section class="main-content">
+        <div class="main-items" id="about"> 
             <h3>About</h3>
             <p>egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam non nisi est sit amet facilisis magna etiam tempor orci eu lobortis elementum nibh tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo</p>
         </div>
-        <section class="chunks" id="projects">
+        <section class="main-items" id="projects">
             <h3>Projects</h3>
             <!--Not sure if this should be table? Or divs? Or buttons? or a?-->
-            <!-- <button>Project 1</button>
-            <button>Project 2</button>
-            <button>Project 2</button> -->
-            <div class="project-links">
-                 <button class="project-button">
-
-             <svg viewBox="0 0 200 200" width="140" height="140" xmlns="http://www.w3.org/2000/svg">
-                <g>
-                <path id="test" fill="none" stroke="white"
-                stroke-width="3" d="M43.7,-75.3C57.2,-67.8,69.1,-57.3,76.6,-44.3C84,-31.2,87,-15.6,86.9,-0.1C86.8,15.4,83.5,30.9,76.3,44.4C69.1,58,58.1,69.8,44.7,78.4C31.4,87.1,15.7,92.7,-0.2,93C-16,93.4,-32.1,88.4,-44.9,79.4C-57.7,70.3,-67.2,57.3,-75.9,43.5C-84.5,29.6,-92.2,14.8,-93.4,-0.7C-94.6,-16.1,-89.3,-32.3,-79.9,-45C-70.6,-57.7,-57.3,-66.9,-43.3,-74C-29.3,-81.2,-14.6,-86.3,0.2,-86.7C15.1,-87,30.2,-82.7,43.7,-75.3Z" transform="translate(100 100)" />
-                <text fill="white">
-                <textPath xlink:href="#test">test</textPath>
-                </text>
-                </g>
-              </svg> 
-              </button>
-
-              <svg viewBox="0 0 200 200" width="140" height="140" xmlns="http://www.w3.org/2000/svg">
-                <path fill="none" stroke="white"
-                stroke-width="3" d="M43.7,-75.3C57.2,-67.8,69.1,-57.3,76.6,-44.3C84,-31.2,87,-15.6,86.9,-0.1C86.8,15.4,83.5,30.9,76.3,44.4C69.1,58,58.1,69.8,44.7,78.4C31.4,87.1,15.7,92.7,-0.2,93C-16,93.4,-32.1,88.4,-44.9,79.4C-57.7,70.3,-67.2,57.3,-75.9,43.5C-84.5,29.6,-92.2,14.8,-93.4,-0.7C-94.6,-16.1,-89.3,-32.3,-79.9,-45C-70.6,-57.7,-57.3,-66.9,-43.3,-74C-29.3,-81.2,-14.6,-86.3,0.2,-86.7C15.1,-87,30.2,-82.7,43.7,-75.3Z" transform="translate(100 100)" />
-              </svg>
+            <div class="project-items">
+                <div class="test"><a href="projects.html" class="center">Project 1</a></div>
+                <div class="test"><a href="projects.html" class="center">Project 1</a></div>
+                <div class="test"><a href="projects.html" class="center">Project 1</a></div>
+                <!-- <a href="projects.html" class="center">Project 2</a>
+                <a href="projects.html" class="center">Project 3</a> -->
+                <!-- <a href="projects.html" class="item-links"><span class="center">Project 2</span> </a>
+                <a href="projects.html" class="item-links"><span class="center">Project 3</span> </a> -->
             </div>
         </section>
-        <section class="chunks" id="contact">
+        <section class="main-items" id="contact">
             <h3>Contact</h3>
-            <form action="">
-                <label for="your-name">Your Name</label>
-                <input type="text" id="your-name">
-                <label for="email">Your Email</label>
-                <label for="message">Your Message</label>
-                <textarea name="message-text" id="message" rows="10"></textarea>
+           
+            <form action="https://formspree.io/f/mrgvdvdw" method="POST">
+              
+                    <label for="your-name">Your Name</label>
+                    <input type="text" id="your-name">
+
+                    <label for="email">Your Email</label>
+                    <input type="text" id="email">
+
+                    <label for="message">Your Message</label>
+                    <textarea name="message-text" id="message" rows="10"></textarea>
+
                 <input type="submit" value="Submit">
             </form>
+ 
         </section>
     </section>
     <footer>
-		<small>Website made with ❤️ by <a href="">Maya</a></small>
+		<p class="footer-text">© Maya Dominice as part of She Codes Plus 2023. Icons by 
+            <a href="https://icons8.com/icons/pulsar-color">Icons8</a>
+        </p>
+
 	</footer>
     <script src="js/script.js"></script>
 </body>
