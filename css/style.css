@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Inter&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-	--orange: #df6e05;
+	--orange: #be5e04;
 	--lightorange: #ffb833;
 	--white: #57d68d;
 	--blue: #5dade2;
@@ -87,7 +87,6 @@ body {
 
     position:absolute;
 	width: 90x;
-
     outline: solid;
 	outline-width: 5px;
     outline-color: var(--orange);
@@ -101,12 +100,55 @@ body {
     justify-content: space-between;
     border-bottom: var(--orange);
     border-style: solid;
+	border-bottom-width: 4px;
     border-top: none;
     border-right:none;
     border-left: none;
 	padding-bottom: 32px;
 	height: 230px;
     
+}
+
+.header-content-projects {
+	background-image: url("/imgs/background_dark.jpg");
+	background-size:cover;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--orange);
+
+    border-style: solid;
+    border-top: none;
+    border-right:none;
+    border-left: none;
+	height: auto;
+    
+}
+
+@media (min-width: 700px){
+	.hamburger-button{
+		display: none;
+	}
+	.desktop-nav {
+		display:inline-block;
+		font-size: 1.2em;
+		font-weight: bolder;
+		text-transform: uppercase;
+	}
+
+	.desktop-nav li a {
+		text-shadow: #111111 8px 8px 8px;
+	}
+
+	.header-content {
+		border-bottom-width: 6px;
+	}
+
+}
+
+@media (max-width: 700px){
+.desktop-nav {
+	display: none;
+}
 }
 
 .mobile-header {
@@ -141,8 +183,9 @@ li {
 
 li a {
 	color: white;
-	text-shadow: #744200cb 1px 1px 2px;
+	text-shadow: #3c270ccb 4px 4px 4px;
 	text-decoration: none;
+	text-transform: uppercase;
 	cursor: pointer;
 }
 
@@ -185,6 +228,7 @@ h2 {
 article h2:hover {
 	font-size:1.1em;
 	transition: all 0.3s ease;
+	text-shadow: #5c2e05a8 2px 2px 2px;
 }
 
 .subtitle {
@@ -238,6 +282,13 @@ h3 {
 
 }
 
+@media (min-width:700px){
+	h3 {
+		font-size: 1.3em;
+		font-weight: bold;
+	}
+}
+
 p {
     padding-left: 16px;
     padding-top: 48px;
@@ -252,8 +303,7 @@ p {
     background-color: var(--orange);
 	padding-top: 16px;
 	padding-bottom: 16px;
-	
-	
+
 }
 
 .project-items {
@@ -270,7 +320,7 @@ p {
 
 .project-links:hover {
 	font-weight: bolder;
-	text-shadow: none;
+	text-shadow:none;
 }
 
 article {
@@ -306,11 +356,31 @@ input, textarea {
 	margin-top: 4px;
 	margin-bottom:4px;
 	padding: 8px;
+	background-color: #fffbf6cb;
+	border-style:solid;
+	border-color:#0e0701;
+	border-width: 2px;
 }
+
 
 input[type=submit]{
 	width: 65%;
 	margin-left: 24%;
+	text-transform: uppercase;
+	font-family: "Rock Salt";
+	letter-spacing: 0.2em;
+	font-weight: bolder;
+}
+
+input[type=submit]:hover{
+	background-color: #df6e05;
+	transition: all ease 0.3s;
+	color: white;
+	border-style: solid;
+	border-color:white;
+	font-weight: bolder;
+	text-shadow: #813100 2px 2px 2px;
+	cursor: pointer;
 }
 
 
@@ -321,6 +391,7 @@ label {
 	padding-bottom: 8px;
 	margin-top: 4px;
 	margin-bottom:4px;
+	text-transform: uppercase;
 }
 
 footer {
@@ -332,10 +403,17 @@ footer {
 	height: 100px;
 	border-top:  var(--orange);
 	border-style: solid;
+	border-top-width: 4px;
 	border-bottom: none;
 	border-right:none;
 	border-left:none;
 }
+@media (min-width:700px) {
+	footer {
+	border-top-width: 6px;
+}
+}
+
 
 p.footer-text{
 	font-family: 'Inter';
