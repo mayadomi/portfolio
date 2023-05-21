@@ -9,9 +9,7 @@
 </head>
 <body>
     <header>
-
         <nav class="header-content">
-
             <section class="hero">
                 <h1>Maya Dominice</h1>
                 <h2 class="subtitle">Spatial, Developer, Creator</h2>
@@ -25,7 +23,67 @@
                     <img src="imgs/profile.jpg" alt="Headshot Image" class="profile-photo">
                 </div>
             </section>
-   
+            <div class="tag-cloud-cluster">
+                <section class="tag-cloud">
+                <!--Should probably be in a separate script file... but time :) -->
+                <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+                <script>
+                    const Texts = ['Spatial Analyst', 'Cartographer', 'GIS','Developer','Designer', 'Bicycle Enthusiast'];
+                    var TagCloud = TagCloud('.tag-cloud', Texts, {
+                        radius: 80,
+                        maxSpeed: 'normal',
+                        initSpeed: 'normal',
+                        direction: 135,
+                        keep: true
+                    });
+                    // Couldn't figure out to get this to work in CSS only.... so kept the sample/example approach
+                    var color = "#be5e04"; //"#FF5733"
+                    document.querySelector('.tag-cloud').style.color = color;
+                    // Change text/images depending on word clicked in cloud
+                    let rootEl = document.querySelector('.tag-cloud');
+                    rootEl.addEventListener('click', function clickEventHandler(e) {
+                        if (e.target.className === 'tagcloud--item'){
+                            TagCloud.pause();
+                            //console.log(e.target.innerText);
+                            e.target.style.color = "#e3e3e3" ;
+                            // // I'm sure there's a much more elegant way of doing this.... but, time :D
+                            if (e.target.innerText == "SPATIAL ANALYST"){
+                                document.getElementById("skill-text").innerText = "Exploring and revealing spatial patterns through analysis.";
+                                document.getElementById("skill-illustration").src = "imgs/spatial.png";   
+                            }
+                            if (e.target.innerText == 'CARTOGRAPHER'){
+                                document.getElementById("skill-text").innerText = "Here be dragons, an illustrated guide on where to find them.";
+                                document.getElementById("skill-illustration").src = "imgs/carto.png";
+                            }
+                            if (e.target.innerText == 'GIS'){
+                                document.getElementById("skill-text").innerText = "How to avoid error 999999 and dodge null island.";
+                                document.getElementById("skill-illustration").src = "imgs/gis.png";
+                            }
+                            if (e.target.innerText == 'DEVELOPER'){
+                                document.getElementById("skill-text").innerText = "Learning how to make things talk to one another.";
+                                document.getElementById("skill-illustration").src = "imgs/developer.png";
+                            }
+                            if (e.target.innerText == 'DESIGNER'){
+                                document.getElementById("skill-text").innerText = "Creating new ideas, concepts and solutions.";
+                                document.getElementById("skill-illustration").src = "imgs/designer.png";
+                            }
+                            if (e.target.innerText == 'BICYCLE ENTHUSIAST'){
+                                document.getElementById("skill-text").innerText = "'Life is like a bicycle, to keep your balance you must keep moving.'";
+                                document.getElementById("skill-illustration").src = "imgs/bicycle.png";
+                            }
+                            TagCloud.resume();  
+                        }
+                    })
+                </script>
+            </section>
+            <article id = "skill-details">
+                <!--I know this should have an alt... but ran out of time to figure out how to hide the alt text when 
+                when no image was yet defined.-->
+                <h5 id="skill-text"></h5>
+                <img src="#" alt="" id="skill-illustration" > 
+                
+            </article>
+            </div>
             <div class="mobile-header">
                 <button class="hamburger-button">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0,0,256,256">
@@ -80,23 +138,43 @@
                     </li>
                 </ul>
             </nav>
+
+            
         </nav>
     </header>
     <section class="main-content">
         <div class="main-items" id="about"> 
-            <h3>About</h3>
-  
-            <p>egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam non nisi est sit amet facilisis magna etiam tempor orci eu lobortis elementum nibh tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo</p>
+            <div class="deco-container">
+                <div class="deco-bar"></div>
+                <h3>About</h3>
+                <div class="deco-bar"></div>
+            </div>
+            <div class="about-me-container">
+                <p>
+                    egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh.
+                </p>
+                <br />
+                <p>
+                    venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus 
+                </p>
+                <br />
+                <p>
+                    nisl tincidunt eget nullam non nisi est sit amet facilisis magna etiam tempor orci eu lobortis elementum nibh tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo
+                </p>
+            </div>
         </div>
         <section class="main-items" id="projects">
-            <h3>Projects</h3>
+            <div class="deco-container">
+                <div class="deco-bar"></div>
+                <h3>Projects</h3>
+                <div class="deco-bar"></div>
+            </div>
             <!--Not sure if this should be table? Or divs? Or buttons? or a?-->
             <div class="project-items">
             <article>
                 <!-- <a href="projects.html">Project 1</a> -->
                 <a href="projects.html"><h2 >Project 1</h2></a>
                 <p>egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus</p>
-
             </article>
             <article>
                 <a href="projects.html"><h2>Project 2</h2></a>
@@ -108,44 +186,29 @@
                 <p>egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus</p>
                 <!-- <a href="projects.html">Project 1</a> -->
             </article>
-
-                <!-- <div class="test"><a href="projects.html" class="center">Project 1</a></div>
-                <div class="test"><a href="projects.html" class="center">Project 1</a></div>
-                <div class="test"><a href="projects.html" class="center">Project 1</a></div> -->
-                <!-- <a href="projects.html" class="center">Project 2</a>
-                <a href="projects.html" class="center">Project 3</a> -->
-                <!-- <a href="projects.html" class="item-links"><span class="center">Project 2</span> </a>
-                <a href="projects.html" class="item-links"><span class="center">Project 3</span> </a> -->
-            </div>
-            <!-- <div class="project-descriptions">
-                <p>some text</p>
-                <p>some text</p>
-            </div> -->
+        </div>
         </section>
         <section class="main-items" id="contact">
-            <h3>Contact</h3>
-           
+            <div class="deco-container">
+                <div class="deco-bar"></div>
+                <h3>Contact</h3>
+                <div class="deco-bar"></div>
+            </div>
             <form action="https://formspree.io/f/mrgvdvdw" method="POST">
-              
                     <label for="your-name">Your Name</label>
                     <input type="text" id="your-name">
-
                     <label for="email">Your Email</label>
                     <input type="text" id="email">
-
                     <label for="message">Your Message</label>
                     <textarea name="message-text" id="message" rows="10"></textarea>
-
                 <input type="submit" value="Submit">
             </form>
- 
         </section>
     </section>
     <footer>
 		<p class="footer-text">© Maya Dominice as part of She Codes Plus 2023. Icons by 
             <a href="https://icons8.com/icons/pulsar-color">Icons8</a>
         </p>
-
 	</footer>
     <script src="js/script.js"></script>
 </body>

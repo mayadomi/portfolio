@@ -124,7 +124,7 @@ body {
     
 }
 
-@media (min-width: 700px){
+@media (min-width: 750px){
 	.hamburger-button{
 		display: none;
 	}
@@ -135,6 +135,10 @@ body {
 		text-transform: uppercase;
 	}
 
+	.mobile-nav{
+		/* display: none; */
+		visibility: hidden;
+	}
 	.desktop-nav li a {
 		text-shadow: #111111 8px 8px 8px;
 	}
@@ -143,12 +147,62 @@ body {
 		border-bottom-width: 6px;
 	}
 
+	.tag-cloud-cluster {
+		display: flex;
+		align-items: flex-end;
+		justify-content: right;
+	}
+
+	.tag-cloud {
+		align-self: center;
+	}
+
+	.tag-bubble {
+		padding: 6px;
+	}
+
+	.tagcloud--item {
+		cursor: pointer;
+		font-weight: bold;
+		letter-spacing: 1px;
+		font-family: 'Inter';
+		text-transform: uppercase;
+		font-size: 8px;
+		line-height: 8px;
+	}
+
+	#skill-details{
+		width: 100px;
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	#skill-text {
+		font-family:'Inter';
+		font-size: 7px;
+		padding-left:8px;
+	}
+	
+	#skill-illustration {
+		width: 32px;
+		align-self:flex-end;
+		margin:8px;
+	}
 }
 
-@media (max-width: 700px){
+@media (max-width: 750px){
 .desktop-nav {
 	display: none;
 }
+.tag-cloud {
+	display:none;
+}
+
+#skill-details {
+	display: none;
+}
+
 }
 
 .mobile-header {
@@ -216,6 +270,15 @@ h1 {
 	transition: all 0.3s ease;
 }
 
+@media (max-width: 700px){
+
+	
+	h1{
+		font-size: 2.5em;
+	}
+	
+	}
+
 h2 {
 	font-family: 'Inter';
 	text-transform: uppercase;
@@ -264,22 +327,38 @@ article h2:hover {
     justify-content: space-between;
     align-items: center;
     background-color: hsl(0, 0%, 15%);
-    padding: 4px;
-    
+    padding: 32px 0px;
+}
+
+.about-me-container {
+	display: flex;
+	flex-direction: column;
+	margin-left: 24px
 }
 
 .projects {
 	padding: 16px;
 }
 
+.deco-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
 h3 {
-    
     writing-mode: vertical-rl;
     text-orientation: upright;
     padding: 16px;
     font-family: 'Inter';
     text-transform: uppercase;
+}
 
+.deco-bar {
+	width: 2px;
+	height: 25px;
+	background-color: white;
+	content: ' ';
 }
 
 @media (min-width:700px){
@@ -289,12 +368,12 @@ h3 {
 	}
 }
 
-p {
+/* p {
     padding-left: 16px;
     padding-top: 48px;
     padding-bottom: 32px;
     padding-right: 16px;
-}
+} */
 
 
 
