@@ -37,7 +37,7 @@ I also included some small styles for hover states, predominantly with links.
 
 ### Screenshots
 
-Original design in Excalidraw:
+Original design in Excalidraw (https://excalidraw.com/):
 
 #### ![Wireframe of website design](/readme_imgs/portfolio_wireframe.png)
 
@@ -65,10 +65,10 @@ Screenshots of the website in various states:
 
 ### Resources
 
-* TagCloud !(https://www.npmjs.com/package/TagCloud#texts)
-* Icons8 !(https://icons8.com/)
-* Unsplash !(https://unsplash.com/)
-* StackOverflow  !(https://stackoverflow.com)
+* TagCloud (https://www.npmjs.com/package/TagCloud#texts)
+* Icons8 (https://icons8.com/)
+* Unsplash (https://unsplash.com/)
+* StackOverflow (https://stackoverflow.com)
 
 ### Wishlist/improvements
 
