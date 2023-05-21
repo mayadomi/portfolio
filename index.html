@@ -20,10 +20,11 @@
                     <a href="https://github.com/mayadomi"><img src="imgs/github.png" alt="GitHub Logo"></a>
                 </section>
                 <div id="profile">
-                    <img src="imgs/profile.jpg" alt="Headshot Image" class="profile-photo">
+                    <img src="imgs/profile.jpg" alt="Image of Maya's head, wearing sunglasses with her chin resting on a puzzle Earth globe." class="profile-photo">
                 </div>
             </section>
-            <div class="tag-cloud-cluster">
+            <div class="hero2">
+                <div class="tag-cloud-cluster">
                 <section class="tag-cloud">
                 <!--Should probably be in a separate script file... but time :) -->
                 <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
@@ -37,7 +38,7 @@
                         keep: true
                     });
                     // Couldn't figure out to get this to work in CSS only.... so kept the sample/example approach
-                    var color = "#be5e04"; //"#FF5733"
+                    var color = "#be5e04"; 
                     document.querySelector('.tag-cloud').style.color = color;
                     // Change text/images depending on word clicked in cloud
                     let rootEl = document.querySelector('.tag-cloud');
@@ -50,26 +51,32 @@
                             if (e.target.innerText == "SPATIAL ANALYST"){
                                 document.getElementById("skill-text").innerText = "Exploring and revealing spatial patterns through analysis.";
                                 document.getElementById("skill-illustration").src = "imgs/spatial.png";   
+                                document.getElementById("skill-illustration").alt = "White curving arrows entangling around each other, with arrow heads exiting on all sides of the line cluster";
                             }
                             if (e.target.innerText == 'CARTOGRAPHER'){
                                 document.getElementById("skill-text").innerText = "Here be dragons, an illustrated guide on where to find them.";
                                 document.getElementById("skill-illustration").src = "imgs/carto.png";
+                                document.getElementById("skill-illustration").alt = "White outline of an unfolded map with left and right ends still curled under. The map depcits some contour lines."
                             }
                             if (e.target.innerText == 'GIS'){
                                 document.getElementById("skill-text").innerText = "How to avoid error 999999 and dodge null island.";
                                 document.getElementById("skill-illustration").src = "imgs/gis.png";
+                                document.getElementById("skill-illustration").alt = "Two white square planes stacked on top of each other to depict a layering effect.";
                             }
                             if (e.target.innerText == 'DEVELOPER'){
                                 document.getElementById("skill-text").innerText = "Learning how to make things talk to one another.";
                                 document.getElementById("skill-illustration").src = "imgs/developer.png";
+                                document.getElementById("skill-illustration").alt = "White computer console window with an opening and closing tag.";
                             }
                             if (e.target.innerText == 'DESIGNER'){
                                 document.getElementById("skill-text").innerText = "Creating new ideas, concepts and solutions.";
                                 document.getElementById("skill-illustration").src = "imgs/designer.png";
+                                document.getElementById("skill-illustration").alt = "A white outline of a desktop monitor with various graphic design elements placed on/around the monitor";
                             }
                             if (e.target.innerText == 'BICYCLE ENTHUSIAST'){
                                 document.getElementById("skill-text").innerText = "'Life is like a bicycle, to keep your balance you must keep moving.'";
                                 document.getElementById("skill-illustration").src = "imgs/bicycle.png";
+                                document.getElementById("skill-illustration").alt = "A white outline of a bicycle.";
                             }
                             TagCloud.resume();  
                         }
@@ -77,40 +84,54 @@
                 </script>
             </section>
             <article id = "skill-details">
+                <h5 id="skill-text"></h5>
                 <!--I know this should have an alt... but ran out of time to figure out how to hide the alt text when 
                 when no image was yet defined.-->
-                <h5 id="skill-text"></h5>
                 <img src="#" alt="" id="skill-illustration" > 
                 
             </article>
-            </div>
-            <div class="mobile-header">
-                <button class="hamburger-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0,0,256,256">
-                        <g transform="">
-                            <g                    
-                                fill-rule="even" 
-                                fill="#e3e3e3" 
-                                stroke="none" 
-                                stroke-width="1" 
-                                stroke-linecap="butt" 
-                                stroke-linejoin="miter" 
-                                stroke-miterlimit="10" 
-                                stroke-dasharray="" 
-                                stroke-dashoffset="0" 
-                                font-family="none" 
-                                font-weight="none" 
-                                font-size="none" 
-                                text-anchor="none" 
-                                style="mix-blend-mode: normal">
-                                <g transform="scale(9.84615,9.84615)">
-                                    <path d="M0,4v2h26v-2zM0,12v2h26v-2zM0,20v2h26v-2z" ></path>
+                </div>
+                <div class="mobile-header">
+                    <button class="hamburger-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26" viewBox="0,0,256,256">
+                            <g transform="">
+                                <g                    
+                                    fill-rule="even" 
+                                    fill="#e3e3e3" 
+                                    stroke="none" 
+                                    stroke-width="1" 
+                                    stroke-linecap="butt" 
+                                    stroke-linejoin="miter" 
+                                    stroke-miterlimit="10" 
+                                    stroke-dasharray="" 
+                                    stroke-dashoffset="0" 
+                                    font-family="none" 
+                                    font-weight="none" 
+                                    font-size="none" 
+                                    text-anchor="none" 
+                                    style="mix-blend-mode: normal">
+                                    <g transform="scale(9.84615,9.84615)">
+                                        <path d="M0,4v2h26v-2zM0,12v2h26v-2zM0,20v2h26v-2z" ></path>
+                                    </g>
                                 </g>
                             </g>
-                        </g>
-                    </svg>
-                </button>
-                <nav class="mobile-nav display-none" >
+                        </svg>
+                    </button>
+                    <nav class="mobile-nav display-none" >
+                        <ul>
+                            <li>
+                                <a href="#about">About Me</a>
+                            </li>
+                            <li>
+                                <a href="projects.html">Work/Projects</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="desktop-nav" >
                     <ul>
                         <li>
                             <a href="#about">About Me</a>
@@ -123,21 +144,7 @@
                         </li>
                     </ul>
                 </nav>
-                
             </div>
-            <nav class="desktop-nav" >
-                <ul>
-                    <li>
-                        <a href="#about">About Me</a>
-                    </li>
-                    <li>
-                        <a href="projects.html">Work/Projects</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
 
             
         </nav>
@@ -150,16 +157,17 @@
                 <div class="deco-bar"></div>
             </div>
             <div class="about-me-container">
+                <h4>Hi, I'm Maya</h4>
                 <p>
-                    egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh.
+                I'm a passionate and versatile individual who thrives as a creative spatial developer, designer, and cartographer. With an insatiable love for learning, I constantly seek new opportunities to expand my knowledge and skill set. With an innovative mindset and keen eye for aesthetics I strive to seamlessly blend creativity and technical expertise in my work.
                 </p>
                 <br />
                 <p>
-                    venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus 
+                    Whether it's developing interactive spatial experiences, automating geoprocessing, integrating with various technology stacks or crafting visually captivating maps, I consistently push the boundaries of my craft. My dedication to continuous learning fuels a drive for exploration, and I seek to continually expand horizons and challenge myself.
                 </p>
                 <br />
                 <p>
-                    nisl tincidunt eget nullam non nisi est sit amet facilisis magna etiam tempor orci eu lobortis elementum nibh tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo
+                    When I'm not tinkering with anything at the computer, you'll likely find me out riding my bicycle exploring and adventuring, helping others learn to ride, or enjoying a good coffee brew somewhere. 
                 </p>
             </div>
         </div>
@@ -169,23 +177,28 @@
                 <h3>Projects</h3>
                 <div class="deco-bar"></div>
             </div>
-            <!--Not sure if this should be table? Or divs? Or buttons? or a?-->
-            <div class="project-items">
+        <div class="project-items"> 
             <article>
-                <!-- <a href="projects.html">Project 1</a> -->
-                <a href="projects.html"><h2 >Project 1</h2></a>
-                <p>egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus</p>
+                <a href="https://mayadomi.github.io/happyBirthday/"><h4>Birthday Game 🎁</h4></a>
+                <p>For my colleagues birthday, I decided to learn how to code a game - I ended up stumbling onto <a href="https://phaser.io/">Phaser</a> and had a great time putting together a simple little game. It was a steep learning curve in animation, JS and sprite-editing. Find the code <a href="https://github.com/mayadomi/happyBirthday">on GitHub</a> or try the game <a href="https://mayadomi.github.io/happyBirthday/">here</a>.</p>
             </article>
             <article>
-                <a href="projects.html"><h2>Project 2</h2></a>
-                <p>egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus</p>
-                <!-- <a href="projects.html">Project 1</a> -->
+                <a href="https://storymaps.arcgis.com/stories/0de3748564a9461190406c686d1052e2"><h4>30 Day Map Challenge 2022 🗺️</h4></a>
+                <p>Last year I participated in the annual <a href="https://30daymapchallenge.com/">30 Day Map Challenge</a> - a worldwide online event where each day has a different theme to map to. It's a gruelling month and I got partway, but this year hoping to complete the full 30! See how far I got over on<a href="https://storymaps.arcgis.com/stories/0de3748564a9461190406c686d1052e2"> ArcGIS Online</a>.</p>
             </article>
             <article>
-                <a href="projects.html"><h2>Project 3</h2></a>
-                <p>egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus</p>
-                <!-- <a href="projects.html">Project 1</a> -->
+                <a href="http://womenscyclingbrisbane.com.au/"><h4>Women's Cycling Brisbane Website 🚲</h4></a>
+                <p>My first foray into Wordpress and got partway with design <a href="http://womenscyclingbrisbane.com.au/">here</a>. I was inspired to try and build a website after putting toegher this <a href="https://youtu.be/qIquljgWLnc">video</a> for the group's <a href="https://asf.org.au/projects/womens-cycling-brisbane?fbclid=IwAR1xYT-LjmR6yhhEfmyY-JZ-lhz1CAR-5ywr_Nwm3g2MNb9Aficws51a_3g">fundraising site.</a></p>
             </article>
+            <article>
+                <a href="https://gutterratlegends.wixsite.com/mysite"><h4>Gutter Rat Legends Website 🌐</h4></a>
+                <p>Similarly to my first Wordpress attempt, this was my first exploration Wix and enjoyed the process of having something of a design brief and colour palette to work from - it lives over <a href="https://gutterratlegends.wixsite.com/mysite">here</a>.</p>
+            </article>
+            <article>
+                <a href="projects.html"><h4>More Projects</h4></a>
+                <p>Head over to my projects page to find out more about my work.</p>
+            </article>
+
         </div>
         </section>
         <section class="main-items" id="contact">
@@ -207,7 +220,8 @@
     </section>
     <footer>
 		<p class="footer-text">© Maya Dominice as part of She Codes Plus 2023. Icons by 
-            <a href="https://icons8.com/icons/pulsar-color">Icons8</a>
+            <a href="https://icons8.com/icons/pulsar-color">Icons8</a> and images for 
+            TagCloud from Microsoft Office icons. Background image from <a href="https://unsplash.com/photos/CDdSPYC45-M"></a>Unsplash
         </p>
 	</footer>
     <script src="js/script.js"></script>
