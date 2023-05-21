@@ -1,6 +1,6 @@
 # Maya Dominice - Portfolio Task
 
-[My portfolio site]( https://github.mayadomi.io/portfolio )
+[My portfolio site]( https://mayadomi.github.io/portfolio/)
 
 ## Project Requirements
 
