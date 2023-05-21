@@ -20,7 +20,8 @@ The technical requirements for the site included some additional features:
 - [ ] At least 2 web pages.
 - [ ] Version controlled with Git
 - [ ] Deployed on GitHub pages.
-- [ ] Implements responsive design principles.- [ ] Uses semantic HTML.
+- [ ] Implements responsive design principles.
+- [ ] Uses semantic HTML.
 
 I added a secondary HTML page with a placeholder to contain addition work/projects. The whole site was uploaded and version controlled in GitHub using Git. I attempted to implement responsive design principles by using media queries and hover/click event listeners/behaviours. I attempted to use semantic HTML through the use of articles, headers, footers, form and other more explicit elements and tried to minimise the use of divs where possible. I included references and alt text on images as well. 
 
@@ -38,7 +39,7 @@ I also included some small styles for hover states, predominantly with links.
 
 Original design in Excalidraw:
 
-#### ![Wireframe of website design](/img/portfolio_wireframe.png "Website Wireframe")
+#### ![Wireframe of website design](/readme_imgs/portfolio_wireframe.png)
 
 Screenshots of the website in various states:
 
@@ -64,10 +65,10 @@ Screenshots of the website in various states:
 
 ### Resources
 
-* TagCloud
-* Hero8 Icons
-* Unsplash
-* StackOverflow
+* TagCloud !(https://www.npmjs.com/package/TagCloud#texts)
+* Icons8 !(https://icons8.com/)
+* Unsplash !(https://unsplash.com/)
+* StackOverflow  !(https://stackoverflow.com)
 
 ### Wishlist/improvements
 

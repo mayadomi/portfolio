@@ -98,7 +98,7 @@ body {
 
 
 .header-content {
-	background-image: url("/imgs/background_dark.jpg");
+	background-image: url("imgs/background_dark.jpg");
 	background-size:cover;
     display: flex;
     justify-content: space-between;
@@ -116,7 +116,7 @@ body {
 /* HEADER FOR PROJECTS PAGE */
 /* Mostly the same with some slight differences */
 .header-content-projects {
-	background-image: url("/imgs/background_dark.jpg");
+	background-image: url("imgs/background_dark.jpg");
 	background-size:cover;
     display: flex;
     justify-content: space-between;
@@ -678,7 +678,7 @@ label {
 
 footer {
 	
-	background-image: url("/imgs/background_dark_reverse.jpg");
+	background-image: url("imgs/background_dark_reverse.jpg");
 	background-size: cover;
 	background-position: center bottom ;
 	
