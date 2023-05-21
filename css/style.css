@@ -184,6 +184,7 @@ li a {
 	width: 40%;
 }
 
+/* I know this probably should be named more semantically..... but brain fog atm */
 .hero2{
 	width:60%;
 	display: flex;
@@ -282,6 +283,7 @@ h4{
 
 /* RESIZING BEHAVIOURS */
 
+/* Medium-ish */
 @media (min-width: 768px){
 
 	h4{
@@ -313,6 +315,8 @@ h4{
 	.header-content, .header-content-projects {
 		border-bottom-width: 6px;
 	}
+
+	/* INTERACTIVE TAG CLOUD */
 
 	.tag-cloud-cluster {
 		display: flex;
@@ -356,6 +360,8 @@ h4{
 		align-self:flex-end;
 		margin:8px;
 	}
+
+
 	#profile {
 		margin-left: 48px;
 	}
@@ -371,6 +377,8 @@ h4{
 		margin-left: 38px;
 	}
 }
+
+/* Larger screens */
 
 @media (min-width:1000px){
 	h4{
@@ -464,6 +472,8 @@ h4{
 	}
 }
 
+/* Smaller screens */
+
 @media (max-width: 768px){
 	.hero{
 		margin-left: 32px;
@@ -497,7 +507,7 @@ h4{
 }
 
 
-
+/* BODY */
 
 .main-content {
     display: flex;
@@ -514,6 +524,8 @@ h4{
     padding: 32px 0px;
 }
 
+/* About me section */
+
 .about-me-container {
 	display: flex;
 	flex-direction: column;
@@ -525,6 +537,8 @@ h4{
 		margin-left: 8px
 	}
 }
+
+/* Project Section */
 
 .projects {
 	padding: 16px;
@@ -621,6 +635,7 @@ article p {
 	background-color: var(--orange);
 }
 
+/* Contact Section */
 
 #contact form {
 	
@@ -675,6 +690,8 @@ label {
 	margin-bottom:4px;
 	text-transform: uppercase;
 }
+
+/* FOOTER */
 
 footer {
 	
