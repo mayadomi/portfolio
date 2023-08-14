@@ -1,5 +1,5 @@
 /* Base HTML Styles */
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Inter&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Inter&family=Bangers&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
 	--orange: #be5e04;
@@ -147,7 +147,7 @@ ul{
 
 li a:hover{
 	
-	font-size: 1.1em;
+	font-size: 1.2em;
 	text-shadow: none;
 	transition: all 0.3s ease;
 	
@@ -202,7 +202,7 @@ li a {
 h1 {
 	font-family: 'Rock Salt';
 	font-weight: lighter;
-	font-size: 3rem;
+	font-size: 5rem;
 	margin-top: 16px;
 	margin-left: 16px;
 	margin-bottom: 8px;
@@ -215,7 +215,7 @@ h2 {
 	font-family: 'Inter';
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-size: 1rem;
+	font-size: 2rem;
 	margin-bottom: 4px;
 	transition: all 0.3s ease;
 }
@@ -231,7 +231,7 @@ article h2:hover {
     font-family: 'Inter';
 	text-transform: uppercase;
 	letter-spacing: 2px;
-    font-size: 1rem;
+    font-size: 2rem;
     margin-left: 20px;
 	margin-bottom: 16px;
 }
@@ -254,22 +254,24 @@ border-radius: 20%;
 
 h4{
 	font-family: 'Rock Salt';
-	font-size: 1.5em;
-	padding-bottom: 4px;
+	font-size: 2.4em;
+	padding-bottom: 0px;
 	text-shadow: var(--orange) 4px 4px 4px;
 }
 
 .project-items h4{
-	font-family: 'Rock Salt';
-	font-size: 1em;
+	font-family: 'Bangers';
+	font-weight: 50;
+	letter-spacing: 3px;
+	font-size: 2em;
 	padding-bottom: 0px;
 	text-shadow: var(--orange) 4px 4px 4px;
 }
 
 .project-items h4:hover{
-	text-shadow: var(--darkorange) 2px 2px 2px;
-	font-size:1.1em;
+	text-shadow: var(--darkorange) 6px 6px 6px;
 	font-weight: bolder;
+	transition: all 0.3s ease;
 }
 
 .project-items p a {
@@ -283,8 +285,15 @@ h4{
 
 /* RESIZING BEHAVIOURS */
 
-/* Medium-ish */
+/* Medium-ish  Screens */
 @media (min-width: 768px){
+	h1{
+		font-size:3rem;
+	}
+
+	.subtitle{
+		font-size: 1.6rem;
+	}
 
 	h4{
 		padding-top: 16px;
@@ -314,7 +323,10 @@ h4{
 
 	.header-content, .header-content-projects {
 		border-bottom-width: 6px;
+		height: 270px;
 	}
+
+
 
 	/* INTERACTIVE TAG CLOUD */
 
@@ -339,7 +351,7 @@ h4{
 		font-family: 'Inter';
 		text-transform: uppercase;
 		font-size: 10px;
-		line-height: 9px;
+		line-height: 14px;
 	}
 
 	#skill-details{
@@ -386,7 +398,7 @@ h4{
 	}
 
 	p{
-		font-size: 12px;
+		font-size: 1.6em;
 	}
 	.hamburger-button{
 		display: none;
@@ -395,7 +407,7 @@ h4{
 		display:inline-block;
 		margin-top: 16px;
 		margin-right: 16px;
-		font-size: 1.2em;
+		font-size: 1.8em;
 		font-weight: bolder;
 		text-transform: uppercase;
 	}
@@ -432,8 +444,8 @@ h4{
 		letter-spacing: 1px;
 		font-family: 'Inter';
 		text-transform: uppercase;
-		font-size: 12px;
-		line-height: 10px;
+		font-size: 1.4em;
+		line-height: 14px;
 	}
 
 	#skill-details{
@@ -463,13 +475,15 @@ h4{
 	}
 
 	h1{
-		font-size: 3.2em;
+		font-size: 4em;
 		margin-left: 32px;
 	}
 
 	.subtitle {
 		margin-left: 38px;
 	}
+	
+
 }
 
 /* Smaller screens */
@@ -583,8 +597,9 @@ h3 {
 
 @media (min-width:700px){
 	h3 {
-		font-size: 1.3em;
+		font-size: 1.8em;
 		font-weight: bold;
+		color: var(--white);
 	}
 }
 
@@ -624,6 +639,8 @@ article {
 	padding: 0px;
 }
 
+
+
 article p {
 	padding: 0px;
 }
@@ -637,36 +654,54 @@ article p {
 
 /* Contact Section */
 
-#contact form {
-	
-	width: 100%;
-	padding-top: 24px;
-	padding-bottom: 24px;
-	padding-left: 15%;
-	padding-right: 15%;
-	
+#contact {
+	display: flex;
+	justify-content: stretch;
+
+
 }
 
+.contactsform {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+
+}
+
+form {
+	width: 110%;
+	display: grid;
+	grid-template-columns: [labels] 70px [controls] 240px;
+	grid-auto-flow: row;
+	grid-gap: 10px;
+}
+
+label {
+
+	grid-column: auto;
+	grid-row: auto;
+	padding: 4px;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+
 input, textarea {
-	display: block;
-	width: 65%;
-	margin-top: 4px;
-	margin-bottom:4px;
-	padding: 8px;
+	grid-column: auto;
+	grid-row: auto;
 	background-color: var(--faded-white);
-	border-style:solid;
-	border-color: var(--border-dark);
-	border-width: 2px;
+	border-style: none;
 }
 
 
 input[type=submit]{
-	width: 65%;
-	margin-left: 24%;
+	grid-column: 2;
 	text-transform: uppercase;
 	font-family: "Rock Salt";
 	letter-spacing: 0.2em;
 	font-weight: bolder;
+	padding: 12px;
+	
 }
 
 input[type=submit]:hover{
@@ -680,16 +715,42 @@ input[type=submit]:hover{
 	cursor: pointer;
 }
 
+@media (min-width:785px){
+	.contactsform {
+		width: 80%;
+		display: flex;
+		justify-content: center;
+	}
 
-label {
-	width:24%;
-	float:left;
-	padding-top:4px;
-	padding-bottom: 8px;
-	margin-top: 4px;
-	margin-bottom:4px;
-	text-transform: uppercase;
+	form {
+		width: 110%;
+		display: grid;
+		justify-content: center;
+		grid-template-columns: [labels] 120px [controls] 340px;
+		grid-auto-flow: row;
+		grid-gap: 10px;
+	}
+
+	input, textarea {
+		grid-column: auto;
+		grid-row: auto;
+		background-color: var(--faded-white);
+		border-style: none;
+	}
+	
+	label {
+
+		grid-column: auto;
+		grid-row: auto;
+		padding: 10px;
+		text-transform: uppercase;
+		font-size: 1.5em;
+	}
+	
+
 }
+
+
 
 /* FOOTER */
 
@@ -707,15 +768,10 @@ footer {
 	border-right:none;
 	border-left:none;
 }
-@media (min-width:700px) {
-	footer {
-	border-top-width: 6px;
-}
-}
 
 p.footer-text{
 	font-family: 'Inter';
-	font-size: 8px;
+	font-size: 0.8em;
 	padding-left: 24px;
 	padding-bottom: 0;
 	padding-right: 0;
@@ -725,3 +781,20 @@ p.footer-text{
 .display-none {
 	display: none;
 }
+
+
+@media (min-width:785px) {
+	footer {
+	border-top-width: 6px;
+	}
+	p.footer-text{
+		font-family: 'Inter';
+		font-size: 1em;
+		padding-left: 24px;
+		padding-bottom: 0;
+		padding-right: 0;
+		padding-top: 43px;
+	}
+
+}
+
