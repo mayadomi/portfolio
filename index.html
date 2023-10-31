@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maya Dominice</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -137,7 +139,7 @@
                             <a href="#about">About Me</a>
                         </li>
                         <li>
-                            <a href="projects.html">Work/Projects</a>
+                            <a href="#projects">Work/Projects</a>
                         </li>
                         <li>
                             <a href="#contact">Contact</a>
@@ -158,8 +160,17 @@
             </div>
             <div class="about-me-container">
                 <h4>Hi, I'm Maya</h4>
-                <p>I'm a versatile and driven individual who thrives in the creative spaces between spatial developer, designer and cartographer.  I have an insatiable love for learning and sharing, and constantly seek out new opportunities to expand my knowledge, skill-sets and connect with others over creative endeavours. A solution-focussed innovative mindset is always front of mind, and I strive to seamlessly blend creativity and technical expertise in all my work.
-                </p>
+                <p>Welcome to my nook on the interwebs.</p>
+                <br>
+                <h4 id="aboutme">About me:</h4>
+                <br>
+                <p> Admittedly something of a cultural chameleon in life, I was born & raised in Geneva, Switzerland to international parents and eventually made my way to Perth, Australia and currently now in Brisbane. 
+                    I started out studying veterinary science before swapping to Molecular Biology. After which I still didn't really know 'what to do with my life'. A this point
+                    I stumbled into geographic information science and felt like I'd been given a secret map to so much of life's mysteries and came to appreciate how special spatial is, and depths of meaning spatial can provide in so many aspects of life.
+                    After a period of time navigating this space, the yearn for learning and discovering new horizons lit a fire for change and I was lucky enough to
+                    not only find but succeed in getting a spot in the She Codes Plus program. It has been a transformational experience
+                and I'm beyond excited to see where my path takes me next.</p> 
+                
                 <br>
                 <p>When I'm not tinkering with anything at a computer, you'll likely find me out riding my bicycle exploring and adventuring, helping others learn to ride, or enjoying a good coffee brew somewhere. 
                 </p>
@@ -171,8 +182,154 @@
                 <h3>Projects</h3>
                 <div class="deco-bar"></div>
             </div>
+
+        <div>
+            <div class="swiper-container">
+                
+                    <div class="swiper-wrapper">
+						<div class="project swiper-slide ">
+							<h2>Racing to Break the Cycle of Domestic Violence</h2>
+                            <h4>A React & DRF Crowdfunding Project</h4>
+							<p>
+								This project was completed as part of our first full stack project.
+                                It was built using Django Rest
+								Framework (DRF) for the backend and React JS for the frontend. The concept
+                                of the site is to help fundraise for domestic violence charities by
+                                empowering and encourage women to cycle, ride and participate in this 
+                                annual cycling event run by LifeCycle Cycling Club. The deployed app can be 
+                                found 
+                                
+								<a
+									href="https://breaking-the-cycle.netlify.app/"
+									target="_blank"
+									>here</a
+								>, and the backend repo is 
+								<a
+									href="https://github.com/mayadomi/breakingthecycle_backend"
+									target="_blank"
+									>here</a
+								>
+								and the frontend repo is 
+								<a
+									href="https://github.com/mayadomi/breakingthecycle_frontend"
+									target="_blank"
+									>here</a
+								>.
+							</p>
+							<a
+								href="https://github.com/mayadomi/breakingthecycle_frontend">
+								<img
+									src="https://raw.githubusercontent.com/mayadomi/breakingthecycle_frontend/main/public/assets/cycle.svg"
+									alt="Logo"
+									width="200"
+									height="200"
+									class="mentorship-logo" />
+							</a>
+                        </div>
+
+						<div class="swiper-slide project">
+							<h2>MentorShip</h2>
+                            <h4>A React & DRF Group Project</h4>
+							<p>
+								This project was completed as the final 
+								She Codes module submission. It was built using Django Rest
+								Framework (DRF) for the backend and React JS for the frontend. I 
+                                was tech lead on the project and worked significantly on the frontend
+                                dashboard component and helping to facilitate the connection between
+                                the backend and frontend components. The fully deployed application can be
+                                found 
+								<a
+									href="https://mentorship-shecodes.netlify.app/"
+									target="_blank"
+									>here</a
+								>, whilst the backend repo is 
+								<a
+									href="https://github.com/SheCodesAus/layer_8_victory_backend_bris_2023"
+									target="_blank"
+									>here</a
+								>
+								and the frontend repo is 
+								<a
+									href="https://github.com/SheCodesAus/layer_8_victory_frontend_bris_2023"
+									target="_blank"
+									>here</a
+								>.
+							</p>
+							<a
+								href="https://github.com/SheCodesAus/layer_8_victory_backend_bris_2023">
+								<img
+									src="https://raw.githubusercontent.com/SheCodesAus/layer_8_victory_frontend_bris_2023/main/public/1.png"
+									alt="Logo"
+									width="200"
+									height="200"
+									class="mentorship-logo" />
+							</a>
+                        </div>
+
+						<div class="swiper-slide project">
+							<h2>Birthday Game</h2>
+                            <h4>A Phaser IO custom game</h4>
+							<p>
+								I built this game for a colleague's birthday last year 
+                                as an exercise to learn JS, but mostly because I had the 
+                                idea and wanted to see it through/build it. It was great fun 
+                                and I learnt a lot about sprites, games and JS. Head over
+								<a
+									href="https://mayadomi.github.io/happyBirthday/"
+									target="_blank"
+									>here</a
+								> to play.</p>
+                                <a
+								href="https://github.com/mayadomi/happyBirthday/">
+								<img
+									src="https://raw.githubusercontent.com/mayadomi/happyBirthday/main/assets/birthday.png"
+									alt="Logo"
+									width="200"
+									height="200"
+									class="mentorship-logo" />
+							</a>
+
+							
+                        </div>
+
+						<div class="swiper-slide project">
+							<h2>30 Day Map Challenge</h2>
+                            <h4>Creating a map every day for the month of November</h4>
+							<p>
+								Last year I participated in the annual 30 Day Map Challenge - 
+                                a worldwide online event where each day has a different theme 
+                                to map to. It's a gruelling month and I got partway, but 
+                                this year hoping to complete the full 30! See how far 
+                                I got over on 
+								<a
+									href="https://storymaps.arcgis.com/stories/0de3748564a9461190406c686d1052e2"
+									target="_blank"
+									>ArcGIS Online</a
+								>.</p>
+                                <a
+								href="https://30daymapchallenge.com/">
+								<img
+									src="https://raw.githubusercontent.com/tjukanovt/30DayMapChallenge/main/images/flyers/30dmc-2023.png"
+									alt="Logo"
+									width="200"
+									height="200"
+									class="mentorship-logo" />
+							</a>
+
+							
+                        </div>
+                    </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class= 'swiper-pagination'></div>
+						
+			</div>
+         
+             
+        </div>
+
         <div class="project-items"> 
-            <article>
+            <!-- <article>
                 <a href="https://mayadomi.github.io/happyBirthday/"><h4>Birthday Game 🎁</h4></a>
                 <p>For my colleagues birthday, I decided to learn how to code a game - it seemed impossibly hard, until I ended up stumbling onto <a href="https://phaser.io/">Phaser</a> and had a great time putting together a simple little game. It was a steep learning curve in animation, JS and sprite-editing. Find the code <a href="https://github.com/mayadomi/happyBirthday">on GitHub</a> or try the game <a href="https://mayadomi.github.io/happyBirthday/">here</a>.</p>
             </article>
@@ -191,7 +348,7 @@
             <article>
                 <a href="projects.html"><h4>More Projects</h4></a>
                 <p>Head over to my projects page to find out more about my work.</p>
-            </article>
+            </article> -->
 
         </div>
         </section>
@@ -221,5 +378,9 @@
         </p>
 	</footer>
     <script src="js/script.js"></script>
+    <script type="module" src="js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</script>
 </body>
 </html>
