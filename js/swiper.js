@@ -1,6 +1,18 @@
 // init Swiper:
-const swiper = new Swiper(".swiper-container", {
+const swiper = new Swiper(".swiper", {
 	slidesPerView: "auto",
+	breakpoints: {
+		640: {
+		  slidesPerView: 1,
+		  spaceBetween: 20,
+		},
+		768: {
+		  slidesPerView: "auto"
+		},
+		1024: {
+		  slidesPerView: "auto"
+		},
+	  },
 	loop: true,
 	grabcursor: true,
 	centeredSlides: true,
@@ -12,6 +24,7 @@ const swiper = new Swiper(".swiper-container", {
 		modifier: 2.5,
 		slideShadows: true,
 	},
+	
 	// If we need pagination
 	pagination: {
 		el: ".swiper-pagination",
